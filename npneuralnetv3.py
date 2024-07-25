@@ -353,7 +353,7 @@ def gradient_descent(iterations, learning_rate, X, Y, n_h1, n_h2):
 
 training_set_x, training_set_y, dev_set_x, dev_set_y, test_set_x, test_set_y = get_data()
 
-cost_history, final_params = gradient_descent(2000, 0.025, training_set_x, training_set_y, 25, 15)
+cost_history, final_params = gradient_descent(2000, 0.025, training_set_x, training_set_y, 50, 25)
 
 dev_set_forward_pass = forward_pass(final_params, dev_set_x)
 dev_set_predictions = model_predict(dev_set_forward_pass["A3"])
